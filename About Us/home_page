@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AboutUs | Pay-Park</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/steps-progressbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md shadow-lg d-lg-flex navigation-clean-search" style="height: 60px;">
+        <div class="container"><a class="navbar-brand" href="#" style="font-style: italic;color: var(--bs-red);margin-left: -40px;">Pay-Park</a><input class="border rounded-pill form-control-lg" type="text" style="border-width: 1px;border-color: var(--bs-gray);margin-left: 10px;" placeholder="Search Parking Places"><a class="btn btn-light action-button" role="button" href="#" style="color: var(--bs-purple);background: var(--bs-indigo);"><i class="fa fa-search"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link d-lg-flex" href="file:///D:/c%20drive%20downloads/MAVERICK/College/Sem_2/Mini_Project/Parking%20page-Places/parking_places.html">Places</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="file:///D:/c%20drive%20downloads/MAVERICK/College/Sem_2/Mini_Project/About%20Us/AboutUs.html">About Us</a></li>
+                </ul>
+                <form class="me-auto search-form" target="_self">
+                    <div class="d-flex align-items-center"></div>
+                </form><label class="form-label d-flex mb-0" for="search-field"></label><a class="btn btn-light action-button" role="button" href="file:///D:/c%20drive%20downloads/MAVERICK/College/Sem_2/Mini_Project/User_Login_Page/user_login_page.html#" style="margin-left: 10px;background: var(--bs-purple);margin-right: -25px;">Sign Out</a>
+            </div>
+        </div>
+    </nav>
+    <section class="projects-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center"><i>Pay-Park</i></h2>
+                <p class="text-center"><strong><em>Happy Parking</em></strong></p>
+                <h6 class="display-6 text-center d-lg-flex" style="margin-top: 10px;font-size: 30px;width: 550px;"><strong><em>Pay-Park</em></strong> (Parking Management System)</h6>
+                <h6 class="display-6 text-center" style="margin-top: 10px;padding: 11px;font-size: 30px;">Our Project Guided By</h6>
+            </div>
+            <div class="row projects" style="margin-bottom: -250px;margin-top: -50px;">
+                <div class="col-sm-6 col-lg-4 item">
+                    <h4 class="name">Mr. Shivendu Bhushan</h4>
+                    <p class="description">Vice-Principal and Head of the department (BBA-CA) &amp; (BCA(Sci)<br>Indira College of Commerce and Science<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <h4 class="name">Mrs. Shubhangi Chavan</h4>
+                    <p class="description">Assistant Professor<br>Indira College of Commerce and Science</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <h4 class="name">Mrs. Divya Chitre</h4>
+                    <p class="description">Assistant Professor<br>Indira College of Commerce and Science<br></p>
+                </div>
+            </div>
+            <h6 class="display-6 text-center" style="margin-top: 10px;font-size: 30px;">Project Created By</h6>
+            <div class="row d-lg-flex justify-content-lg-center projects" style="margin-top: -40px;margin-bottom: -200px;">
+                <div class="col-sm-6 col-lg-4 item">
+                    <h3 class="name">Mr. Ashutosh Dash</h3>
+                    <p class="description">1st Year BCA(Sci) Student<br>Indira College of Commerce and Science<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item">
+                    <h3 class="name">Mr. Anand Desai</h3>
+                    <p class="description">1st Year BCA(Sci) Student<br>Indira College of Commerce and Science<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="shadow-lg footer-basic" style="border-top-left-radius: 20px;border-top-right-radius: 20px;background: var(--bs-gray-dark);color: var(--bs-light);">
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="file:///D:/c%20drive%20downloads/MAVERICK/College/Sem_2/Mini_Project/About%20Us/AboutUs.html">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Pay-Park © 2021 All rights are reserved&nbsp;<br></p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

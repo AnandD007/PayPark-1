@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Park Booking Date | Pay-Park</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/steps-progressbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<style>
+label
+{
+font-family:calibri;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-xl text-break shadow-lg d-lg-flex navigation-clean-search" style="height: 60px;">
+        <div class="container"><a class="navbar-brand" href="file:../About%20Us/home_page1.html" style="font-style: italic;color: var(--bs-red);margin-left: -40px;">Pay-Park</a><input class="border rounded-pill form-control-lg" type="text" style="border-width: 1px;border-color: var(--bs-gray);margin-left: 10px;" placeholder="Search Parking Places"><a class="btn btn-light action-button" role="button" href="#" style="color: var(--bs-purple);background: var(--bs-indigo);"><i class="fa fa-search"></i></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navcol-1">
+                <ul class="navbar-nav navbar-nav-scroll flex-row flex-shrink-1 flex-fill justify-content-center align-items-center align-content-center visible" style="background: var(--bs-white);transform: scale(1);filter: blur(0px);">
+                    <li class="nav-item"><a class="nav-link" href="file:../About%20Us/home_page1.html">Home</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link d-lg-flex" href="file:../Parking%20page-Places/parking_places.html">Places</a></li>
+                    <li class="nav-item"><a class="nav-link" href="file:../Create%20Registration_Page/contact_us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="file:../About%20Us/AboutUs.html">About Us</a></li>
+                </ul>
+                <form class="me-auto search-form" target="_self">
+                    <div class="d-flex align-items-center"></div>
+                </form><label class="form-label d-flex mb-0" for="search-field"></label><a class="btn btn-light action-button" role="button" href="file:../User_Login_Page/user_login_page.html#" style="margin-left: 10px;background: var(--bs-purple);margin-right: -25px;">Sign Out</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row d-sm-flex" style="margin-top: 15px;">
+        <div class="col d-sm-flex">
+            <ul class="d-sm-flex justify-content-sm-center justify-content-lg-center progressbar w-100" style="margin-top: 30px;">
+                <li class="active">Choose Place</li>
+                <li class="active">Choose Date-time &amp; Parking Spot</li>
+                <li>Payment</li>
+            </ul>
+        </div>
+    </div>
+    <div style="text-align: center;margin-top: 40px;">
+        <h1 class="display-5" style="font-size: 25px;">Enter Booking Date &amp; Time</h1><br>
+		<label>Vehicle Details: <input class="border rounded-pill shadow-lg" name="vehicle_number" type="tel" placeholder="*Vehicle Number" style="margin-top: 20px;padding: 8px;" inputmode="numeric" autocomplete="on" autofocus="" required=""><input name="vehicle_model" class="border rounded-pill shadow-lg" type="text" placeholder="*Vehicle Model" style="margin-top: 20px;padding: 8px;" inputmode="text" autocomplete="on" autofocus="" required=""></label><br>
+		<select class="border rounded-pill shadow-lg" style="margin-top: 20px;padding: 10px;">
+		<option name="vehicle_type" selected disabled>Select Vehicle Type</option>
+		<option>Scoter</option>
+		<option>Bike</option>
+		<option>Car</option></select></label><br><br>
+		<label style="margin-right:auto;margin-right:auto;">Start Time : <input name="start_time" class="border rounded-pill shadow-lg" type="time" name="Date" style="padding: 8px;" required=""><input class="border rounded-pill shadow-lg" type="date" name="Date" style="padding: 8px;" required=""></label>
+    </div>
+	<div style="text-align: center;margin-top: 40px;">
+        <label>End Time : <input class="border rounded-pill shadow-lg" type="time" name="end_time" style="padding: 8px;" required=""><input class="border rounded-pill shadow-lg" type="date" name="Date" style="padding: 8px;" required=""></label>
+    </div>
+    <div style="text-align: center;margin-top: 40px;">
+        <h1 class="display-5" style="font-size: 25px;margin-bottom: 15px;">Select Parking Spot</h1>
+        <h1 class="display-5" style="font-size: 15px;margin-bottom: 15px;text-align: right;color: var(--bs-red);margin-right: 10px;margin-bottom: 10px;">*Red color Parking Spot cells are booked / unavailable&nbsp;</h1>
+        <h1 class="display-5" style="font-size: 15px;margin-bottom: 15px;text-align: right;color: var(--bs-green);margin-right: 10px;">*Green color Parking Spot cells are booking / available&nbsp;</h1>
+    </div>
+    <section></section>
+    <div class="align-items-center" style="margin: 10px;margin-bottom: 10px;padding: 15px;">
+        <h5 class="display-6" style="font-size: 20px;text-align: center;">1st lane</h5>
+        <div class="btn-group d-block d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-center justify-content-xl-center justify-content-xxl-center" role="group" style="transform: scale(1);margin: 30px;margin-top: 30px;">
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P1</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P2</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P3</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P4</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P5</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P6</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P7</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P8</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P9</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV1</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV2</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV3</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV4</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV5</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV6</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV7</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV8</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV9</button>
+		</div>
+    </div>
+    <div style="margin: 10px;margin-bottom: 10px;padding: 15px;">
+        <h5 class="display-6" style="font-size: 20px;text-align: center;">2st lane</h5>
+        <div class="btn-group d-block d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-center justify-content-xl-center justify-content-xxl-center" role="group" style="transform: scale(1);margin: 30px;margin-top: 30px;">
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P1</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P2</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P3</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P4</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P5</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P6</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P7</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P8</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P9</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV1</button>
+		<button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV2</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV3</button>
+		<button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV4</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV5</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV6</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV7</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV8</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV9</button></div>
+    </div>
+    <div style="margin: 10px;margin-bottom: 10px;padding: 15px;">
+        <h5 class="display-6" style="font-size: 20px;text-align: center;">3rd lane</h5>
+        <div class="btn-group d-block d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-center justify-content-xl-center justify-content-xxl-center" role="group" style="transform: scale(1);margin: 30px;margin-top: 30px;"><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P1</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P2</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P3</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P4</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P5</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P6</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P7</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P8</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P9</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV1</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV2</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV3</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV4</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV5</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV6</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV7</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV8</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV9</button></div>
+    </div>
+    <div style="margin: 10px;margin-bottom: 10px;padding: 15px;">
+        <h5 class="display-6" style="font-size: 20px;text-align: center;">4th lane</h5>
+        <div class="btn-group d-block d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-center justify-content-xl-center justify-content-xxl-center" role="group" style="transform: scale(1);margin: 30px;margin-top: 30px;"><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P1</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P2</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P3</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P4</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P5</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P6</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >P7</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P8</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >P9</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV1</button><button class="btn btn-danger btn-sm border rounded-pill" name="park_spot" type="submit" required >PV2</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV3</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV4</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV5</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV6</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV7</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV8</button><button class="btn btn-success btn-sm border rounded-pill" name="park_spot" type="submit" required >PV9</button></div>
+    </div>
+    <div class="d-lg-flex justify-content-lg-end" style="margin-right: 20px;"><a href="file:../Parking%20page-Places/parking_places.html" style="text-decoration:none;color:white"><button class="btn btn-primary border rounded-pill shadow-lg" type="submit" style="margin-left: 30px;padding: 10px 50px;background: var(--bs-orange);">Cancel Process</button></a><a href="file:../Parking%20Page-Payments/parking_booking_payment.html" style="text-decoration:none;color:white"><button class="btn btn-primary border rounded-pill shadow-lg" type="submit" required  style="margin-left: 30px;padding: 10px 50px;background: var(--bs-teal);">Checkout to Payments</button></a></div>
+    <footer class="shadow-lg footer-basic" style="margin-top: 20px;background: var(--bs-gray-dark);border-top-left-radius: 20px;border-top-right-radius: 20px;color: var(--bs-light);">
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="file:../About%20Us/home_page1.html">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="file:../About%20Us/AboutUs.html">About</a></li>
+            <li class="list-inline-item"><a href="file:../Create%20Registration_Page/contact_us.html">Contact Us</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Pay-Park © 2021 All rights are reserved&nbsp;<br></p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-1.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-2.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker.js"></script>
+</body>
+
+</html>

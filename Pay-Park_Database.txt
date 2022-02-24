@@ -1,0 +1,62 @@
+create table employee_pp
+(
+empid varchar2(20) primary key,
+emp_name varchar2(20) not null,
+phone_no number(10) not null
+);
+
+create table vehicle_owner_pp
+(
+owner_id number(8) primary key,
+owner_name varchar2(30) not null,
+phone_no number(10) not null,
+email_id varchar2(20) not null
+);
+
+create table login_pp
+(
+phone_no number(10) primary key,
+password varchar2(20) not null,
+id varchar2(20) not null
+);
+
+create table vehicle_pp
+(
+reg_no varchar2(20) primary key,
+type varchar2(10) not null,
+model varchar2(10) not null
+);
+
+create table payment_gateway_pp
+(
+gateway_id varchar2(8) primary key,
+gateway_name varchar2(10) not null,
+collection_pd number(10) not null,
+collection_date date
+);
+
+create table client_pp
+(
+client_id varchar2(8) primary key,
+client_name varchar2(10) not null,
+address varchar2(150) not null,
+contact_no number(10) not null,
+email_id varchar2(20) not null
+);
+
+create table parking_pp
+(
+parking_id varchar2(8) primary key,
+spot_no varchar2(5) not null,
+owner_id varchar2(8),
+reg_no varchar2(20),
+start_date date not null,
+start_time time not null,
+end date date not null,
+end time time not null,
+fees_price number(10) not null,
+fee_status varchar2(10) not null,
+gateway_id varchar2(8),
+client_id varchar2(8)
+);
+
